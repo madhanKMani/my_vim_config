@@ -1,0 +1,36 @@
+syntax on
+set relativenumber
+" Basic settings
+set number
+set tabstop=2 softtabstop=2
+set shiftwidth=2
+set expandtab
+set nu
+set nowrap
+set smartindent
+set noswapfile
+set nobackup
+set undodir=~/.config/nvim/undodir
+set undofile
+set incsearch
+set backspace=2
+set colorcolumn=160
+set mouse=a
+
+call plug#begin('~/.config/nvim//plugged')
+
+Plug 'dart-lang/dart-vim-plugin'
+
+" Git
+Plug 'vim-airline/vim-airline'
+
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+
+call plug#end()
+
+c_auto_map = v:true
+
+" key bindings
+vmap <C-y> "+y
+
